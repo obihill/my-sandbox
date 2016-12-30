@@ -1,0 +1,32 @@
+{
+  "name": "rQuery",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/obihill/my-sandbox.git"
+  },
+  "description": "just testing git and github",
+  "author": "https://github.com/obihill",
+  "version": "1.0.0",
+  "devDependencies": {
+    "jshint": "^2.8.0",
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.3.0",
+    "karma-browserstack-launcher": "^1.1.1",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-coverage": "^1.1.1",
+    "karma-firefox-launcher": "^1.0.0",
+    "karma-fixture": "^0.2.6",
+    "karma-html2js-preprocessor": "^1.1.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-json-fixtures-preprocessor": "0.0.6",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "karma-sauce-launcher": "^1.1.0",
+    "node-phantom": "^0.2.5",
+    "selenium-webdriver": "^3.0.1"
+  },
+  "scripts": {
+    "test": "./node_modules/jshint/bin/jshint src/rquery.js",
+    "test:unit" : "",
+    "test:cover" : ""
+  }
+}

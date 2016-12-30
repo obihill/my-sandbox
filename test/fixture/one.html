@@ -1,0 +1,204 @@
+<style>
+    body {margin: 0; padding: 0;}
+
+    .hide {visibility: hidden; height: 1px; overflow: hidden;}
+
+    #cntnr-rquery {position: relative; top: 0; margin: 0; padding: 0;}
+
+    #cntnr-5-1-css{background-color: #41a62a; width: 100px; height: 200px; margin: 10px; padding: 20px;}
+
+    #cntnr-5-2-css{background-color: #41a62c; width: 100px; height: 200px; margin: 10px; padding: 20px;}
+
+    #cntnr-12-1-dimensions{box-sizing: border-box; width: 213px; height: 384px; border: 5px; margin: 8px 5px; padding: 13px 6px;}
+
+    #cntnr-12-2-dimensions{box-sizing: content-box; width: 213px; height: 384px; border: 5px solid #ddd; margin: 8px 5px; padding: 13px 6px;}
+
+    #cntnr-14-offset{box-sizing: border-box; position: relative; top: 5px; left: 5px;}
+    #cntnr-14-1-offset{box-sizing: border-box; position: absolute; top: 20px; left: 12px; width: 400px; height: 200px; background-color: #00AFEE;}
+    #cntnr-14-2-offset{box-sizing: border-box; position: absolute; top: 3400px; left: 16px; width: 400px; height: 200px; background-color: #ee5f4c;}
+
+</style>
+
+<!-- TEST HTML Starts -->
+<div id="cntnr-rquery" class="hide">
+    <div id="cntnr-0-remove" class="test-rscript-rquery">
+        <p id="cntnr-0-remove-1" data-val="first_to_remove">First Paragraph</p>
+        <p id="cntnr-0-remove-2" data-val="second_to_remove">Second Paragraph</p>
+        <p id="cntnr-0-remove-3" data-val="third_to_remove">Third Paragraph</p>
+    </div>
+    <div id="cntnr-1-find" class="test-rscript-rquery">
+        <p class="cntnr-1-find-p">First Paragraph</p>
+    </div>
+    <div id="cntnr-2-find" class="test-rscript-rquery">
+        <p>First Paragraph</p>
+        <p>Second Paragraph</p>
+        <p>Third Paragraph</p>
+        <p>Fourth Paragraph</p>
+        <p>Fifth Paragraph</p>
+    </div>
+    <div id="cntnr-3-find" class="test-rscript-rquery">
+        <p class="alt">First Paragraph</p>
+        <p class="alt">Second Paragraph</p>
+        <p class="alt">Third Paragraph</p>
+        <p>Fourth Paragraph</p>
+        <p class="alt">Fifth Paragraph</p>
+    </div>
+    <div id="cntnr-1-each" class="test-rscript-rquery">
+        <p class="alt">First Paragraph</p>
+        <p class="alt">Second Paragraph</p>
+        <p class="alt">Third Paragraph</p>
+        <p>Fourth Paragraph</p>
+        <p class="alt">Fifth Paragraph</p>
+    </div>
+    <div id="cntnr-1-clone" class="test-rscript-rquery clone">
+        <p>First Paragraph</p>
+    </div>
+
+    <div id="cntnr-4-1-attr" class="test-rscript-rquery" data-var-one="first_attr" data-var-two="second_attr">
+        <p>First Paragraph</p>
+    </div>
+    <div id="cntnr-4-2-attr" class="test-rscript-rquery" data-var-one="first_attr" data-var-two="second_attr">
+        <p class="alt" data-var-one="paragraph_1">First Paragraph</p>
+        <p class="alt" data-var-one="paragraph_2">Second Paragraph</p>
+        <p class="alt" data-var-one="paragraph_3">Third Paragraph</p>
+    </div>
+    <div id="cntnr-4-3-attr" class="test-rscript-rquery" data-var-one="first_attr" data-var-two="second_attr">
+        <p>First Paragraph</p>
+    </div>
+    <div id="cntnr-4-4-attr" class="test-rscript-rquery">
+        <p>First Paragraph</p>
+    </div>
+    <div id="cntnr-4-5-attr" class="test-rscript-rquery">
+        <p class="alt" data-var-one="paragraph_1">First Paragraph</p>
+        <p class="alt" data-var-one="paragraph_2">Second Paragraph</p>
+        <p class="alt" data-var-one="paragraph_3">Third Paragraph</p>
+    </div>
+    <div id="cntnr-4-6-attr" class="test-rscript-rquery">
+        &nbsp;
+    </div>
+
+    <div id="cntnr-5-css">
+
+        <div id="cntnr-5-1-css">&nbsp;</div>
+
+        <div id="cntnr-5-2-css">&nbsp;</div>
+
+    </div>
+
+    <div id="cntnr-6-1-events" class="test-rscript-rquery">
+        <p>Click Me!</p>
+    </div>
+    <div id="cntnr-6-2-events" class="test-rscript-rquery">
+        <p>Remove Click Me!</p>
+    </div>
+    <div id="cntnr-6-3-events" class="test-rscript-rquery">
+        <p>Click Me via Trigger!</p>
+    </div>
+
+    <div id="cntnr-7-classes" class="test-rscript-rquery">
+
+        <div id="cntnr-7-1-classes"></div>
+
+        <div id="cntnr-7-2-classes" class="class_1 class_3 class_5"></div>
+
+        <div id="cntnr-7-3-classes" class="class_1 class_3"></div>
+
+        <div id="cntnr-7-4-classes" class="class_2 class_4 class_6"></div>
+
+    </div>
+
+    <div id="cntnr-8-trav" class="test-rscript-rquery">
+
+        <div id="cntnr-8-1-trav" data-val="trav8_1">trav8_1</div>
+        <div id="cntnr-8-2-trav" data-val="trav8_2">trav8_2</div>
+        <div id="cntnr-8-3-trav" data-val="trav8_3">trav8_3</div>
+        <div id="cntnr-8-4-trav" data-val="trav8_4">trav8_4</div>
+        <div id="cntnr-8-5-trav" data-val="trav8_5">trav8_5</div>
+
+        <div id="cntnr-8-6-trav" data-val="trav8_6">
+            <div id="cntnr-8-6-trav-child" data-val="trav8_6_child">
+                <div id="cntnr-8-6-trav-grandchild-1" data-val="trav8_6_grandchild_1">
+                </div>
+                <div id="cntnr-8-6-trav-grandchild-2" data-val="trav8_6_grandchild_2">
+                </div>
+                <div id="cntnr-8-6-trav-grandchild-3" data-val="trav8_6_grandchild_3">
+                </div>
+                <div id="cntnr-8-6-trav-grandchild-4" data-val="trav8_6_grandchild_4">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="cntnr-9-forms" class="test-rscript-rquery">
+        <div>
+            <form>
+                <input id="cntnr-9-forms-text-1" type="text" name="cntnr-9-forms-text-1" value="first_text_box">
+                <input id="cntnr-9-forms-text-2" type="text" name="cntnr-9-forms-text-2" value="first_text_box">
+            </form>
+        </div>
+    </div>
+
+    <div id="cntnr-10-html" class="test-rscript-rquery">
+        <div id="cntnr-10-1-html">text</div>
+        <div id="cntnr-10-2-html"><span>html</span></div>
+        <div id="cntnr-10-3-html"><span>html</span></div>
+    </div>
+
+    <div id="cntnr-11-dom" class="test-rscript-rquery">
+        <div id="cntnr-11-util-dom">
+            <p id="cntnr-11-util-p-1" data-val="last_p1">This is the last paragraph 1</p>
+            <p id="cntnr-11-util-p-2" data-val="last_p2">This is the last paragraph 2</p>
+            <p id="cntnr-11-util-p-3" data-val="last_p3">This is the last paragraph 3</p>
+            <p id="cntnr-11-util-p-4" data-val="last_p4">This is the last paragraph 4</p>
+            <p id="cntnr-11-util-p-5" data-val="last_p5">This is the first paragraph 5</p>
+            <p id="cntnr-11-util-p-6" data-val="last_p6">This is the last paragraph 6</p>
+        </div>
+        <div id="cntnr-11-1-dom">
+            <p>First paragraph</p>
+            <p>Second paragraph</p>
+            <p>Third paragraph</p>
+            <p>Fourth paragraph</p>
+        </div>
+        <div id="cntnr-11-2-dom">
+            <p>First paragraph</p>
+            <p>Second paragraph</p>
+            <p>Third paragraph</p>
+            <p>Fourth paragraph</p>
+        </div>
+        <div id="cntnr-11-3-dom">
+            <p>First paragraph</p>
+            <p>Second paragraph</p>
+            <p>Third paragraph</p>
+            <p>Fourth paragraph</p>
+        </div>
+        <div id="cntnr-11-4-dom">
+            <p>First paragraph</p>
+            <p>Second paragraph</p>
+            <p>Third paragraph</p>
+            <p>Fourth paragraph</p>
+        </div>
+        <div id="cntnr-11-5-dom">
+            <p id="cntnr-11-5-dom-p">First paragraph</p>
+        </div>
+        <div id="cntnr-11-6-dom">
+            <p id="cntnr-11-6-dom-p">First paragraph</p>
+        </div>
+    </div>
+
+    <div id="cntnr-12-dimensions" class="test-rscript-rquery">
+        <div id="cntnr-12-1-dimensions" class="dimensions-1"></div>
+        <div id="cntnr-12-2-dimensions" class="dimensions-2"></div>
+    </div>
+
+    <div id="cntnr-13-data" class="test-rscript-rquery">
+        <div id="cntnr-13-1-data"></div>
+    </div>
+
+    <div id="cntnr-14-offset" class="test-rscript-rquery">
+        <div id="cntnr-14-1-offset">&nbsp;</div>
+    </div>
+    <div id="cntnr-14-2-offset">&nbsp;</div>
+
+</div>
+<!-- TEST HTML Ends -->
