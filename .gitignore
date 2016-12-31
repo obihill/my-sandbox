@@ -1,6 +1,6 @@
 .DS_Store
 Thumbs.db
 node_modules
-test/result
+test/result/coverage/report-html
 _*
 *.log
