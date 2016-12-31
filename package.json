@@ -25,7 +25,7 @@
     "selenium-webdriver": "^3.0.1"
   },
   "scripts": {
-    "test": "npm run test:lint & npm run test:unit",
+    "test": "npm run test:lint && npm run test:unit",
     "test:lint": "jshint src/rquery.js",
     "test:unit" : "karma start test/karma.config.js --browsers PhantomJS",
     "test:cover" : ""
