@@ -26,6 +26,6 @@ describe('Test True and False', function(){
     });
 
     it('should get html from DOM object', function(){
-        expect(elem_1_obj.html()).toBe('Firsth');
+        expect(elem_1_obj.html()).toBe('First Paragraph');
     });
 });
