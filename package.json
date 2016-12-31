@@ -1,5 +1,5 @@
 {
-  "name": "My-Sandbox",
+  "name": "my-sandbox",
   "repository": {
     "type": "git",
     "url": "https://github.com/obihill/my-sandbox.git"
@@ -25,9 +25,9 @@
     "selenium-webdriver": "^3.0.1"
   },
   "scripts": {
-    "test": "test:lint && test:unit",
+    "test": "npm run -s test:lint & npm run -s test:unit",
     "test:lint": "jshint src/rquery.js",
-    "test:unit" : "karma start test/karma.config.js --browsers=PhantomJS",
+    "test:unit" : "karma start test/karma.config.js --browsers PhantomJS",
     "test:cover" : ""
   }
 }
